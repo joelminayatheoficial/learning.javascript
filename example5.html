@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example5</title>
+</head>
+<body>
+    
+<script>
+/*Desarrolle un algoritmo que permita determinar el sueldo neto de
+un empleado, al cual se le realiza un descuento del 13% (por planilla) 
+de su sueldo bruto, este sueldo se calcula en base a las horas trabajadas
+al mes y su tarifa por hora trabajada. Visualizar sueldo bruto, descuento
+y sueldo neto a pagar. Use diagrama de flujo y pseudocódigo. */ 
+
+
+//declaracion de variables 
+
+var  hxtrabajo = parseFloat(prompt("Ingrese el total de horas trabajadas"));
+var  hxsueldo  = parseFloat(prompt("Ingrese el costo de trabajo por horas"));
+
+//realizamos la operacion 
+
+ presueldo = hxsueldo * hxtrabajo ; 
+ descuento =   presueldo * 0.13;  
+ sueldo = presueldo - descuento; 
+
+ //mostramos los resultados 
+
+document.write("Sueldo bruto del trabajador " + presueldo + "<br>")
+document.write("Descuento de planilla " + descuento + "<br>")
+document.write("Sueldo total para el mes " + sueldo)
+
+
+
+
+</script>
+    
+</body>
+</html>

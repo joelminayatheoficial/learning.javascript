@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example4</title>
+</head>
+<body>
+
+    <script>
+    /*Desarrolle un algoritmo donde un vendedor recibe un sueldo mensual
+     más un 10% de comisión por ventas, el vendedor desea saber cuánto dinero
+    obtendrá por las tres ventas que realiza en el mes
+    Determinar el pago total que recibirá a fin mes el vendedor en soles y
+    dólares. Use diagrama de flujo y pseudocódigo. */ 
+    
+    // declaramos  las variables 
+
+    var sueldomensual = parseInt(prompt("Ingrese el monto del sueldo"));
+
+    var primerventa = parseInt(prompt("ingrese el monto de la primera venta"));
+    var segundaventa = parseInt(prompt("ingrese el monto de la tercera venta"));
+    var terceraventa = parseInt(prompt("ingrese el monto de la tercera venta"));
+
+    // realizamos la operacion 
+
+    comision_venta = primerventa * 0.1; 
+    comision_venta1 = segundaventa * 0.1; 
+    comision_venta2 = terceraventa * 0.1; 
+
+    comisiontotal = comision_venta + comision_venta1 + comision_venta2; 
+    sueldototal = comisiontotal + sueldomensual 
+
+    // mostramos los resultados
+
+     document.write("Monto total de la comisiones por ventas " + comisiontotal + " soles " + "<br>");
+     document.write("Monto total de comision mas sueldo mensual " + sueldototal + " soles" ) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </script>
+    
+</body>
+</html>
