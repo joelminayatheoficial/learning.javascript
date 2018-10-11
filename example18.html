@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example18</title>
+</head>
+<body>
+
+    <script>
+     /*	Confeccione un programa para que al ingresar una edad nos 
+     muestre un mensaje si es mayor de edad con una imagen de DNI color celeste. */ 
+     
+     // declarando variables 
+     var number1 = parseInt(prompt("Ingresar el numero de edad")); 
+
+     // realizamos la operacion  
+
+    if ( number1 > 18 ) {
+        document.write("Eres mayor de edad" + "<br>");
+        var texto="<img src='dni.jpg' alt='Imagen' />";
+        document.writeln(texto);
+    }
+    else {
+        document.write("Eres menor de edad")
+    }
+
+    
+    
+    </script>
+    
+</body>
+</html>

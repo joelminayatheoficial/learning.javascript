@@ -1,0 +1,34 @@
+<html> 
+    <head> 
+        <title>Carnito</title> 
+    </head> 
+<body> 
+    Ingrese numero:<input type="text" id="valor" > 
+    <button id="MyBtn1" >Invertir numero</button> 
+ 
+          <script> 
+                document.getElementById("valor").onfocus=function(){ if(document.getElementById("valor").value == 0){ document.getElementById("resultado").innerHTML = "";}}; 
+                document.getElementById("MyBtn1").onclick=function(){ invertir();}; 
+                function invertir(){ 
+                      var numero = document.getElementById("valor").value;  
+                     
+                    if(numero == 0){ 
+                        document.getElementById("resultado").innerHTML = "EL PROGRAMA TERMINO"; 
+                    }     
+                     
+                    while( parseInt(numero / 10) != 0 ){ 
+ 
+                            document.getElementById("resultado").innerHTML += (numero % 10); 
+                            numero = parseInt(numero / 10); 
+                            if(parseInt(numero/10) == 0){ 
+                                document.getElementById("resultado").innerHTML += (numero % 10); 
+                                document.getElementById("resultado").innerHTML += "     "; 
+                            } 
+     
+                    }     
+                     
+                }   
+        </script> 
+<p id="resultado"></p> 
+</body> 
+</html> 

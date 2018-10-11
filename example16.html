@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+/*Desarrolle un programa para que nos muestre una imagen de un automóvil
+de 640 * 360 píxeles si es que luego de ingresar 2 números su suma es
+resultado par */ 
+
+//declarando variables   
+ 
+var number1 = parseInt(prompt("Ingrese el primer numero"));
+var number2 = parseInt(prompt("Ingrese el segundo numero")); 
+
+//realizando la operacion 
+ 
+suma = (number1 + number2) % 2 ; 
+
+if (suma == 0) {
+var texto="<img src='porshe.jpg' alt='Imagen' />";
+document.writeln(texto);
+}
+else {
+    document.write("La suma del numero es impar")
+} 
+
+
+
+</script>
+    
+</body>
+</html>

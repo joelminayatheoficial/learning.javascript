@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example15</title>
+</head>
+<body>
+    
+
+<script>
+
+    /*Desarrolle un programa para que al ingresar 4 notas nos muestre el
+     promedio y si el promedio es mayor o igual que 13, muestre el mensaje
+      aprobó y una imagen de felicidad. */ 
+
+    //declaracion de variables 
+    var nota1 = parseFloat(prompt("ingresar primera nota"));
+    var nota2 = parseFloat(prompt("ingresar segunda nota"));
+    var nota3 = parseFloat(prompt("ingresar tercera nota"));
+    var nota4 = parseFloat(prompt("ingresar cuarta nota"));  
+
+    //realizamos la operacion 
+
+    promedio = (nota1 + nota2 + nota3 + nota4) / 4
+
+    //mostrando resultados 
+
+    if (promedio > 13) {
+        document.write("Aprobo el curso" + "<br>")
+        document.write("Inserte una imagen con la etiqueta img");
+    }
+    
+    else { 
+        document.write("usted no aprobo el curso")
+
+    }
+      
+
+</script>
+
+</body>
+</html>
