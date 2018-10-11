@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example 10</title>
+</head>
+<body>
+    
+    <script>
+    
+    /*Diseñar un algoritmo que permita ingresar dos números enteros. Si la suma de
+     ambos es un número par entonces agregarle a dicho valor 10% de lo contrario 
+     agregarle 5%. Imprimir el valor final  */ 
+
+    // declarando variables 
+
+    var number1 = parseInt(prompt("Ingrese el primer numero")); 
+    var number2 = parseInt(prompt("Ingrese el segundo numero"));
+
+    //realizamos la operacion 
+
+    suma = number1 + number2; 
+    sumapar = suma % 2 
+
+    if (sumapar == 0 ) {
+        ( totalsuma = suma + suma*0.10);
+        document.write("Valor de la suma mas es el aumento respectivo " + totalsuma)
+    }
+    else {
+        (totalsuma = suma + suma*0.05);
+        document.write("Valor de la suma mas es el aumento respectivo " + totalsuma)   
+    }
+
+    
+    </script>
+</body>
+</html>

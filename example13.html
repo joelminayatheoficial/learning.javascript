@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example13</title>
+</head>
+<body>
+
+    <script>
+    
+    /*	Diseñar un algoritmo que permita calcular el promedio final del curso
+     de Fundamentos de Programación. Debe considerar las siguientes evaluaciones: 
+     Examen Parcial  30%, Examen Final 45% y el Trabajo Final 25%.
+     Deberá mostrar un mensaje indicando si el alumno está “Aprobado” o “Desaprobado”
+    (Considere nota mínima aprobatoria 13) */  
+
+    //declaracion de variables 
+     var ex_parcial = parseFloat(prompt("Ingresar la norta del parcial")); 
+     var ex_final = parseFloat(prompt("ingrese la nota final")); 
+     var trabfinal = parseFloat(prompt("Ingrese la nota final del trabajo ")); 
+
+    // realizamos la operacion 
+
+    suma1 = ex_parcial * 0.3; 
+    suma2 = ex_final * 0.45; 
+    suma3 = trabfinal * 0.25; 
+
+    sumatotal = suma1 + suma2 + suma3 ; 
+
+    if ( sumatotal > 13) {
+        document.write("El alumno esta aprobado y su nota es " + sumatotal)
+    }
+    else {
+        document.write("El alumno esta desaprobado y su nota es " + sumatotal)
+    }
+
+
+
+
+    
+    </script>
+    
+</body>
+</html>

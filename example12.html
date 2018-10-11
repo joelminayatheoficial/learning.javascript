@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example12</title>
+</head>
+<body>
+
+    <script>
+    /*Diseñar un algoritmo que permita ingresar 2 números enteros diferentes. 
+    Si el 1er número es el mayor deberá efectuar la siguiente fórmula: 
+    Doble del 1er número – 2do Número + 3.  En caso el 2do número sea el
+    mayor, deberá efectuar la siguiente fórmula: 1er Número + 5 + (2do Número * 2). 
+    Mostrar el resultado.  */ 
+
+    //declaracion de variables 
+
+    var number1 = parseFloat(prompt("Ingresar primer numero entero"));
+    var number2 = parseFloat(prompt("Ingresar segundo numero entero"));
+
+    //realizamos la operacion y mostramos salidas 
+
+    if ( number1 > number2) {
+        ( totalsuma = 2*number1 + number2 + 3);                        
+        document.write("el resultado es " + totalsuma);
+    }
+    else{
+        (totalsuma = number1 + 5 + number2*5);    
+        document.write("el resultado es " + totalsuma);
+    }
+
+    </script>
+    
+</body>
+</html>
